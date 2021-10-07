@@ -3,5 +3,5 @@ project(tcp_client_server C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(tcp_client client.c)
-add_executable(tcp_server server.c)
+add_executable(tcp_client client.c model.h model.c)
+add_executable(tcp_server server.c model.h model.c)
